@@ -1,0 +1,74 @@
+/* =Simple styling
+------------------------------------------------------------------------------*/
+body {
+	color: #333;
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+/* =Markup
+------------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0;
+	font-weight:normal;
+	margin: 1.2em 0em 1.2em 0em;
+	color: #333;
+}
+
+h1 {
+	font-family: Verdana, Arial;
+	font-size: 2.0em;
+	margin: 0;
+	letter-spacing: 1px;
+}
+
+
+/* =Links 
+------------------------------------------------------------------------------*/
+a, a:link,
+a:hover, a:visited, a:active, a:focus { color: #222; text-decoration: underline; }
+
+h1 a, h1 a:link {color: #222; text-decoration: none;}
+h1 a:hover, h1 a:visited, h1 a:active, h1 a:focus {color: #222; text-decoration: underline;}
+
+/* =Components
+------------------------------------------------------------------------------*/
+#container {
+	margin: 0 auto;
+	width: 960px;
+		
+	background: #fefefe;
+	padding: 10px;
+	color: #444;
+}
+
+#header {
+	margin: 0 auto;
+	width: 960px;
+	padding: 10px;
+}
+
+#footer {
+	margin: 0 auto;
+	width: 960px;
+		
+	border-top: 1px solid #ccc;
+	padding: 10px;
+	clear: both;
+	height: 50px;
+	color: #555;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 0 -80px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {height: 50px; /* .push must be the same height as .footer */}
+

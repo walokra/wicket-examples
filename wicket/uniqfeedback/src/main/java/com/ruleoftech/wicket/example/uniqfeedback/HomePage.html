@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+	<meta charset="utf-8" />
+	<title>Unique FeedbackPanel example | Rule of Tech</title>
+	<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="Stylesheet" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="Stylesheet" />
+	<link rel="stylesheet" href="css/form.css" type="text/css" media="screen" title="Stylesheet" />
+</head>
+<body>
+	
+	<div id="page" class="wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1>Unique FeedbackPanel example</h1>
+			</div>
+		</div>
+		
+		<div id="container">
+			<div wicket:id="status" id="status">[[status messages]]</div>
+			
+			<form wicket:id="form">
+				<fieldset class="span-24">
+	                <label for="value" class="span-6" wicket:id="valueLabel">
+	                	<span wicket:id="valueLabelText">[value]</span>
+						<input type="text" class="field" wicket:id="value"/>
+					</label>
+	
+	                <label for="desc" class="span-6 last" wicket:id="descLabel">
+	                	<span wicket:id="descLabelText">[desc]</span>
+	                	<input type="text" class="field" wicket:id="desc"/>
+	                </label>
+
+					<div class="clearfix"></div>
+					
+	                <label for="startDate" class="span-6" wicket:id="startDateLabel">
+	                	<span wicket:id="startDateLabelText">[startdate]</span>
+	                	<input type="text" class="field" wicket:id="startDate"/>
+	                </label>
+	                
+					<label for="endDate" class="span-6 last" wicket:id="endDateLabel">
+	                	<span wicket:id="endDateLabelText">[enddate]</span>
+	                	<input type="text" class="field" wicket:id="endDate"/>
+	                </label>
+
+					<div class="buttonset">
+						<input type="submit" value="Reset" wicket:id="resetButton" />
+						<input type="submit" value="Save" wicket:id="saveButton" />
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		
+		<div class="push"></div>
+	</div>
+		
+	<div id="footer" class="footer">
+	</div>
+</body>
+</html>
